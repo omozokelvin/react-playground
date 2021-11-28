@@ -1,3 +1,4 @@
+import Wrapper from 'components/Helpers/Wrapper';
 import AddUser from 'components/Users/AddUser';
 import UsersList from 'components/Users/UsersList';
 import { useState } from 'react';
@@ -19,11 +20,11 @@ const App = () => {
   };
 
   return (
-    <div>
+    <Wrapper>
       <AddUser onAddUser={addUserHandler} />
 
       <UsersList users={usersList} />
-    </div>
+    </Wrapper>
   );
 };
 
